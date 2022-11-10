@@ -1,9 +1,11 @@
 import time
 from adafruit_macropad import MacroPad
+# leave this out if you're not using Dvorak
+from keyboard_layout_us_dvo import KeyboardLayout
 import buttonConfigs
 
-
-macropad = MacroPad()
+# get rid of the argument if you're not using dvorak
+macropad = MacroPad(layout_class=KeyboardLayout)
 text_lines = macropad.display_text(title="Hello, World!")
 current_layer = 0
 
