@@ -6,13 +6,13 @@ import buttonConfigs
 
 # get rid of the argument if you're not using dvorak
 macropad = MacroPad(layout_class=KeyboardLayout)
+
 text_lines = macropad.display_text(title="Hello, World!")
 global current_layer
 current_layer=0
 
 def changeLayer(layer_number):
     global current_layer
-    print(current_layer)
     if(layer_number < len(buttonConfigs.BUTTON_CONFIGS)):
         current_layer = layer_number
     else:
