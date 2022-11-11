@@ -11,6 +11,8 @@ text_lines = macropad.display_text(title="Hello, World!")
 global current_layer
 current_layer=0
 
+macropad.pixels.brightness = 0.5
+
 def changeLayer(layer_number):
     global current_layer
     if(layer_number < len(buttonConfigs.BUTTON_CONFIGS)):

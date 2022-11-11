@@ -8,14 +8,14 @@ BUTTON_CONFIGS = [
             ]
         ),
         (
-            (0, 255, 0),
+            (255, 0, 255),
             [
                 "macropad.keyboard_layout.write('git add .')",
                 "macropad.keyboard.send(macropad.Keycode.ENTER)"
             ]
         ),
         (
-            (0, 0, 255),
+            (255, 0, 255),
             [
                 "macropad.keyboard_layout.write('git commit -m ""')",
                 "macropad.keyboard.send(macropad.Keycode.LEFT_ARROW)"
@@ -45,6 +45,8 @@ BUTTON_CONFIGS = [
             [
                 "macropad.keyboard_layout.write('git status')",
                 "macropad.keyboard.send(macropad.Keycode.ENTER)"
+        \
+        
             ]
         ),
         (
@@ -62,10 +64,9 @@ BUTTON_CONFIGS = [
             ]
         ),
         (
-            (255, 0, 255),
+            (255, 255, 255),
             [
-                "macropad.keyboard_layout.write('git status')",
-                "macropad.keyboard.send(macropad.Keycode.ENTER)"
+                "changeLayer(1)"
             ]
         ),
         (
@@ -76,7 +77,7 @@ BUTTON_CONFIGS = [
             ]
         ),
         (
-            (255, 0, 0),
+            (255, 255, 255),
             [
                 "changeLayer(1)"
             ]
